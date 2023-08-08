@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+:root {
+ --black:black;
+ --blue:#56c5db;
+ --darkorange:#fba33e;
+ --darkcyan:rgb(6, 138, 138);
+ --sistema:rgb(44, 15, 2);
+ --gray:#959595;
+}
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input {
+ font:400 16px "Roboto", sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*header*/
+.main-header{
+background-image: url("img/logo_transparent.png");
+background-position: 50% 39%;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.main-nav{
+    width: 100%;
+    max-width: 600px;
+}
+
+.header-list-container{
+    padding: 16px 0;
+}
+
+.nav-item{
+text-transform: uppercase;
+color: var(--black);
+transition: 0.2s;
+}
+
+.nav-item:hover{
+    color: var(--blue);
+}
+
+hr {
+    width: 100%;
+}
+
+.movie-title-large{
+    font-size: 54px;
+}
+
+.main-section{
+    padding: 40px 0 64px;
+}
+
+.container{
+    max-width: 600px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.section-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.about-movie-image{
+    float: left;
+    margin: 0 20px 10px 0;
+    border-radius: 10%;
+    width: 200px;
+    height: auto;
+}
+
+.section-description{
+    color: var(--black);
+}
+
+/* footer*/
+.main-footer{
+    background-color: var(--darkorange);
+    padding: 16px 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie-title-medium{
+    font-size: 26px;
+}
+
+.movie-title{
+    font-family: "Roboto" cursive;
+    color: var(--white);
+}
+
+.list-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-item + .footer-item{
+    margin-left: 16px;
+}
+
+.footer-item img{
+ width: 32px;
+ height: 32px;
+}
+
+.match-tailer-button {
+ color: rgb(244, 141, 23);
+ font-weight: bold;
+ border: 2px solid rgb(246, 153, 5);
+ border-radius: 8px;
+ padding: 8px 24px;
+ background-color: rgba(0, 0, 0, 0.4);
+
+ transition: 0.2s;
+}
+
+.match-tailer-button:hover {
+    background-color: var(--sistema);
+}
+
+
+.watch-tailer-button-player {
+    color: var(--black);
+    margin:14px 0;
+    border: 2px solid var(--darkorange);
+    border-radius: 15%;
+    padding: 10px;
+    font-size: 15px;
+    background-color:rgb(246, 153, 5);
+
+    transition: 0.2s;
+}
+
+.watch-tailer-button-player:hover{
+    color: white;
+    background-color: var(--darkorange);
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-item + .schedule-item{
+    border-top: 1px solid #333;
+    margin-top: 8px;
+    padding-top: 8px;
+}
+
+.show-date{
+    width: 22%;
+    padding: 4px;
+}
+
+.show-place{
+    width: 35%;
+    padding: 4px;
+}
+
+.buy-ticket-button{
+    width: 32%;
+
+    background-color: var(--darkorange);
+    color: var(--black);
+    font-weight: bold;
+    border: 2px solid var(--blue);
+    border-radius: 4px;
+    padding: 2px 2px;
+
+    transition: 0.2s;
+}
+
+.buy-ticket-button:hover{
+    background-color: transparent;
+    color: var(--white);
+}
+
+.normal-section + .normal-section{
+    margin-top: 80px;
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-title{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.product-image{
+    width: 240px;
+}
+
+.product-price-container{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-price{
+    margin-right: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.button-hover-background{
+    background-color: var(--darkorange);
+    color: var(--black);
+    font-weight: bold;
+    border: 2px solid var(--darkorange);
+    border-radius: 6px;
+    padding: 4px 2px;
+
+    transition: 0.2s;
+}
+
+.button-hover-backgrou:hover{
+    background-color: transparent;
+    color: var(--darkorange);
+}
+
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-head-item{
+    text-align: start;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.second-col, .third-col{
+    width: 26%;
+}
+
+.cart-product td{
+    padding: 8px 0;
+}
+
+.product-identificaction{
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-image{
+    width: 120px;
+    height: 70px;
+}
+
+.cart-product-title{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+.cart-product-price{
+    font-family: "Montserrat", sans-serif;
+}
+
+.product-qtd-input{
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid var(--blue);
+    text-align: center;
+    background-color: #eee;
+}
+
+.remove-product-button{
+    margin-left: 12px;
+    background-color: #fba33e;
+    color: var(--black);
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+
+    transition: 0.2s;
+}
+
+.remove-product-button:hover{
+    filter: brightness(0.8);
+}
+
+.cart-total-container{
+    border-top: 1px solid var(--gray);
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+}
+
+.cart-total-container strong{
+    margin-right: 12px;
+}
+
+.purchase-button{
+    display: flex;
+    margin: 24px auto 0;
+    background-color: var(--blue);
+    color: var(--black);
+    border: 0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.purchase-button:hover{
+    filter: brightness(0.8);
+}
+
+/* responsividade */
+
+@media (max-widht: 502px){
+.movie-title-large{
+    font-size: 36px;
+}
+.schedule-item{
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.schedule-item + .schedule-item{
+    margin-top: 12px;
+}
+
+.show-date, .show-place {
+    width: 32%;
+    padding: 4px;
+}
+
+.buy-ticket-button{
+    width: 60%;
+    margin-top: 12px;
+    padding: 12px 12px;
+}
+
+.products-container{
+    justify-content: center;
+}
+
+.product-identificaction{
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.cart-product-title{
+    margin-top: 6px;
+}
+
+.product-qtd-input{
+    display: block;
+    margin: 0 auto;
+}
+
+.remove-product-button{
+    display: block;
+    margin: 8px auto 0;
+}
+
+}
+
+@media (max-widht:495px){
+    .about-movie-image {
+        width: 160px;
+    }
+
+    .main-footer-container{
+        flex-direction: column;
+    }
+
+    .movie-title-medium{
+        margin-bottom: 16px;
+    }
+}
+
+
+
+
+
